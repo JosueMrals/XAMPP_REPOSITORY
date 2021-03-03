@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>CALCULADORA CON PHP</h2>
+    <h2>Ingrese los numeros...</h2>
+    <form method="POST" action="Calculadora.php">
+        <label>Primer Numero: </label>
+        <input type="text" name="n1" pattern="[0-9.]+" required autofocus> <br><br>
+        <label>Segundo Numero: </label>
+        <input type="text" name="n2" pattern="[0-9.]+" required> <br>
+
+        <h3>¿Que desea realizar?</h3>
+
+        Sumar 
+        <input type="radio" name="accion" value="1" checked>
+        Restar 
+        <input type="radio" name="accion" value="2">
+        Multiplicar 
+        <input type="radio" name="accion" value="3">
+        Dividir 
+        <input type="radio" name="accion" value="4"> <br><br>
+
+        <input type="submit" value="CALCULAR" name="enviar"> <br><br>
+
+        </form>
+
+</body>
+</html>
